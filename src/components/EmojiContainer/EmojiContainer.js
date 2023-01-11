@@ -5,6 +5,7 @@ import EmojiCategoryBar from '../EmojiCategoryBar/EmojiCategoryBar';
 import EmojiSearch from '../EmojiSearch/EmojiSearch';
 import AllEmojis from '../Emojis/AllEmojis';
 import EmojisByCategory from '../Emojis/EmojisByCategory';
+import btns from '../../assets/btn-str';
 
 import classes from './EmojiContainer.module.css';
 
@@ -23,7 +24,7 @@ const EmojiContainer = () => {
   return (
     <>
       <div className={classes.container}>
-        <div id="top"></div>
+        <div id="top" />
         <h1 className={classes.categoryTitle}>Categories</h1>
         <EmojiCategoryBar
           onCategory={setActiveCategory}
@@ -48,7 +49,7 @@ const EmojiContainer = () => {
         )}
       </div>
       <button onClick={scrollToTop} className={classes.button}>
-        🔝
+        {btns.top}
       </button>
     </>
   );

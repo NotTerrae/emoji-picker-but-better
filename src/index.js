@@ -10,7 +10,6 @@ root.render(
   <ChatContextProvider>
     <ContainerContextProvider>
       <AppContextProvider>
-        {' '}
         <App />
       </AppContextProvider>
     </ContainerContextProvider>

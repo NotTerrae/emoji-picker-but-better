@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import ChatContext from '../../context/chat-context';
 import AppContext from '../../context/app-context';
+import btns from '../../assets/btn-str';
 
 import classes from './EmojiInput.module.css';
 
@@ -36,10 +37,10 @@ const EmojiInput = ({ onRef, onUpdate, onValue, onToggle }) => {
         type="text"
       />
       <button onClick={setMessageHandler} className={classes.button}>
-        📩
+        {btns.send}
       </button>
       <button onClick={onToggle} className={classes.button}>
-        😃
+        {btns.smile}
       </button>
     </form>
   );

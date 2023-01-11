@@ -4,9 +4,9 @@ const ChatContainer = ({ messages }) => {
   return (
     <div className={classes.container}>
       <div className={classes.messages}>
-        {messages.map(mess => {
+        {messages.map((mess, index) => {
           return (
-            <div className={classes.messageBox} key={Math.random()}>
+            <div className={classes.messageBox} key={mess.time + index}>
               <div className={classes.messageIndividual}>{mess.message}</div>
               <div>{mess.time}</div>
             </div>
